@@ -1,17 +1,14 @@
-<img src="https://cdn.prod.website-files.com/677c400686e724409a5a7409/6790ad949cf622dc8dcd9fe4_nextwork-logo-leather.svg" alt="NextWork" width="300" />
-
 # Multi-Cloud Data Transfer with AWS and GCP
-
-**Project Link:** [View Project](http://learn.nextwork.org/projects/aws-multicloud-storage)
 
 **Author:** Caelan Dever  
 **Email:** caelanwd@gmail.com
 
 ---
 
-![Image](http://learn.nextwork.org/happy_amber_shy_newt/uploads/aws-multicloud-storage_s5k4l5m6)
+<img width="490" alt="gcpp" src="https://github.com/user-attachments/assets/2720ec47-f8ad-4d9d-9297-a1834f0ee321" />
 
 ---
+
 
 ## Introducing Today's Project!
 
@@ -31,7 +28,8 @@ This project took me approximately 45 mins. The most challenging part was settin
 
 I started this project by setting up an S3 bucket. I uploaded files to the bucket.
 
-![Image](http://learn.nextwork.org/happy_amber_shy_newt/uploads/aws-multicloud-storage_s1g7h8j9)
+
+<img width="923" alt="gcp" src="https://github.com/user-attachments/assets/6af8b6e6-3dd2-4cda-81d0-089d68140c0c" />
 
 ---
 
@@ -41,9 +39,10 @@ Google Cloud Platform is Google's suite of cloud computing services and products
 
 GCP's free tier includes their storage solution (i.e. their version of S3) called Cloud Storage. I also get credit to spend on services not covered by GCP's Free Tier across the first 90 days of my account.
 
-![Image](http://learn.nextwork.org/happy_amber_shy_newt/uploads/aws-multicloud-storage_s2g8h9j0)
+<img width="928" alt="gcc" src="https://github.com/user-attachments/assets/fd1a9b09-ca8a-4160-a5ca-a4259c4a7929" />
 
 ---
+
 
 ## Storage Transfer
 
@@ -53,7 +52,7 @@ The transfer is set up using Storage Transfer Service, which handles authenticat
 
 There are two different types of transfers you could set up Batch scheduling and Event-driven transfer. The difference is Batch scheduling means a one-time or scheduled transfer of data. It's great for migrating large datasets or periodic backup while Event-driven transfer, automatically transfers data whenever the source bucket gets a new or updated object. Event-driven transfer is ideal for real-time synchronization but comes with a few extra steps.
 
-![Image](http://learn.nextwork.org/happy_amber_shy_newt/uploads/aws-multicloud-storage_s3k2l3m4)
+<img width="428" alt="gccc" src="https://github.com/user-attachments/assets/f31402a2-cdac-4687-83a4-86ee5a1238ff" />
 
 ---
 
@@ -65,9 +64,7 @@ I created a custom IAM role to securely access your S3 bucket from GCP. This rol
 
 Within the IAM role, I needed to write a custom trust policy because this trust policy tells AWS to trust requests coming from Storage Transfer in your GCP project (GCP calls accounts "projects"). The policy identifies GCS based on a subject ID, which is how AWS knows whether a request to transfer data is really coming from your GCP project's Storage Transfer, and not from someone else's project.
 
-
-
-![Image](http://learn.nextwork.org/happy_amber_shy_newt/uploads/aws-multicloud-storage_s4k3l4m5)
+<img width="468" alt="gci" src="https://github.com/user-attachments/assets/ff37c40a-465f-4857-a1ba-c67ce7251e8a" />
 
 ---
 
@@ -79,7 +76,7 @@ I verified my data transfer was successful by seeing the files from your S3 buck
 
 
 
-![Image](http://learn.nextwork.org/happy_amber_shy_newt/uploads/aws-multicloud-storage_s5k4l5m6)
+<img width="490" alt="gcpp" src="https://github.com/user-attachments/assets/07b26ce0-4fe7-41ee-a2e2-12661b5f5731" />
 
 ---
 
@@ -89,14 +86,6 @@ In a project extension, I learned a manifest file is like a shopping list for yo
 
 I verified my data transfer was successful by seeing the files from your S3 bucket listed in your GCP Cloud Storage bucket!
 
-
-
-![Image](http://learn.nextwork.org/happy_amber_shy_newt/uploads/aws-multicloud-storage_rththrthrth)
-
----
-
-## Trial, Error, Success
-
----
+<img width="254" alt="mnf" src="https://github.com/user-attachments/assets/42c7c801-2a05-48c1-8e56-da4d3cfa1c4f" />
 
 ---
